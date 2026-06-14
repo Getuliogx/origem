@@ -46,12 +46,12 @@ app.get("/origem", (req, res) => {
   if (descricao) {
     return res
       .type("text/plain")
-      .send(`Você é o(a) personagen: ${nome} — ${descricao}`);
+      .send(`Você é: ${nome} — ${descricao}`);
   }
 
   return res
     .type("text/plain")
-    .send(`Você é o(a) personagen: ${nome}`);
+    .send(`Você é: ${nome}`);
 });
 
 const PORT = process.env.PORT || 3000;
